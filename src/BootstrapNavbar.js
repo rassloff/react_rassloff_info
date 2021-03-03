@@ -4,11 +4,15 @@ import {
     Switch,
     Route,
   } from "react-router-dom";
-  import { Navbar,Nav,NavDropdown,Form,FormControl,Button } from 'react-bootstrap'
+
+import { Navbar,Nav,NavDropdown,Form,FormControl,Button } from 'react-bootstrap'
   
-  import Home from './components/Home';
-  import AboutUs from './components/AboutUs';
-  import ContactUs from './components/ContactUs';
+import Home from './components/Home';
+import AboutUs from './components/AboutUs';
+import ContactUs from './components/ContactUs';
+import HelloWorld from './components/HelloWorld';
+import KursListe from './components/KursListe';
+import KursListe2 from './components/KursListe2';
 
 class BootstrapNavbar extends React.Component{
 
@@ -24,11 +28,12 @@ class BootstrapNavbar extends React.Component{
                                 <Navbar.Collapse id="basic-navbar-nav">
                                     <Nav className="mr-auto">
                                     <Nav.Link href="/">Home</Nav.Link>
-                                    <Nav.Link href="/about-us">About Us</Nav.Link>
-                                    <Nav.Link href="/contact-us">Contact Us</Nav.Link>
-                                    <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                                    <NavDropdown title="Kurs" id="basic-nav-dropdown">
+                                        <NavDropdown.Item href="/hello-world">Hello World</NavDropdown.Item>
+
+                                        <NavDropdown.Item href="/kurs-liste">Kurs Liste</NavDropdown.Item>
+                                        <NavDropdown.Item href="/kurs-liste-2">Kurs Liste 2</NavDropdown.Item>
+
                                         <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                                         <NavDropdown.Divider />
                                         <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
@@ -50,6 +55,15 @@ class BootstrapNavbar extends React.Component{
                                 </Route>
                                 <Route path="/contact-us">
                                     <ContactUs />
+                                </Route>
+                                <Route path="/hello-world">
+                                    <HelloWorld />
+                                </Route>
+                                <Route path="/kurs-liste">
+                                    <KursListe />
+                                </Route>
+                                <Route path="/kurs-liste-2">
+                                    <KursListe2 />
                                 </Route>
                             </Switch>
                         </Router>

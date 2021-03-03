@@ -4,7 +4,7 @@ import { Navbar,Nav } from 'react-bootstrap'
 class BootstrapFooter extends React.Component {
   render() {
     return (
-    <div>
+    <div fixed="buttom">
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Navbar.Brand href="#home">Footer</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -12,6 +12,9 @@ class BootstrapFooter extends React.Component {
           <Nav className="mr-auto">
             <Nav.Link href="#features">Features</Nav.Link>
             <Nav.Link href="#pricing">Pricing</Nav.Link>
+
+            <Nav.Link href="/about-us">About Us</Nav.Link>
+            <Nav.Link href="/contact-us">Contact Us</Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link href="#deets">More deets</Nav.Link>
