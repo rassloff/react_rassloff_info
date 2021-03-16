@@ -1,4 +1,4 @@
-export default [
+let daten = [
     {
       id: 1,
       count: 2,
@@ -18,3 +18,5 @@ export default [
       price: 6.00,
     }
 ];
+
+export default daten;
