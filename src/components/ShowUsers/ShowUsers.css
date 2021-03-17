@@ -1,0 +1,13 @@
+.invoice_items {
+    list-style-type: none;
+}
+.price {
+    color: cornflowerblue
+}
+h3.stock_critical {
+    color: red;
+    margin-block-end: 0;
+  }
+sub.stock_critical {
+    font-style: italic;
+}

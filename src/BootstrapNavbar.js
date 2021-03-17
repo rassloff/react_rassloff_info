@@ -68,7 +68,6 @@ class BootstrapNavbar extends React.Component{
                                     <KursListe2 />
                                 </Route>
                                 <Route path="/show-users">
-                                    ???
                                     <ShowUsers />
                                 </Route>
                             </Switch>
