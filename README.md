@@ -78,3 +78,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 # `yarn test`
 
+# npx generate-react-cli component ShowUsers
+
+erstellt eine Component, mit allen zusatz Dateien. in generate-react-cli.json  wird festgelegt was wie wo
+
+17.03.2021 es werden tsx TypeScript - Dateien erstellt.
+
+next Level, erstelle JS-class-Components
+

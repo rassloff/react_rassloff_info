@@ -13,6 +13,7 @@ import ContactUs from './components/ContactUs';
 import HelloWorld from './components/HelloWorld';
 import KursListe from './components/KursListe';
 import KursListe2 from './components/KursListe2';
+import ShowUsers from './components/ShowUsers';
 
 class BootstrapNavbar extends React.Component{
 
@@ -33,6 +34,7 @@ class BootstrapNavbar extends React.Component{
 
                                         <NavDropdown.Item href="/kurs-liste">Kurs Liste</NavDropdown.Item>
                                         <NavDropdown.Item href="/kurs-liste-2">Kurs Liste 2</NavDropdown.Item>
+                                        <NavDropdown.Item href="/show-users">Show Users</NavDropdown.Item>
 
                                         <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                                         <NavDropdown.Divider />
@@ -64,6 +66,10 @@ class BootstrapNavbar extends React.Component{
                                 </Route>
                                 <Route path="/kurs-liste-2">
                                     <KursListe2 />
+                                </Route>
+                                <Route path="/show-users">
+                                    ???
+                                    <ShowUsers />
                                 </Route>
                             </Switch>
                         </Router>
